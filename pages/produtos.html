@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Confira os ingressos, pacotes de viagem, experiências e souvenirs do AquaImperial. Garanta já a sua entrada para o melhor parque marinho."
+    />
+    <title>Produtos — AquaImperial</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Produtos — AquaImperial" />
+    <meta property="og:description" content="Ingressos, pacotes de viagem, experiências e souvenirs do AquaImperial." />
+    <meta property="og:image" content="../assets/img/intro.jpg" />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/produtos.css" />
+  </head>
+  <body class="page-enter">
+    <!-- ========== NAVBAR ========== -->
+    <header class="navbar">
+      <nav class="navbar__inner" aria-label="Navegação principal">
+        <a href="../index.html" class="navbar__logo">AquaImperial</a>
+        <ul class="navbar__links">
+          <li><a href="../index.html" class="navbar__link">Home</a></li>
+          <li><a href="produtos.html" class="navbar__link navbar__link--active">Produtos</a></li>
+          <li><a href="perguntas.html" class="navbar__link">Perguntas</a></li>
+        </ul>
+        <button class="navbar__toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ========== PAGE HEADER ========== -->
+    <div class="produtos-page">
+      <div class="page-header" data-reveal>
+        <h1>Nossos Produtos</h1>
+        <p>Ingressos, pacotes, experiências e muito mais para sua visita</p>
+      </div>
+
+      <!-- ========== LAYOUT: SIDEBAR + PRODUCTS + CART ========== -->
+      <div class="produtos-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <h3 class="sidebar__title">Categorias</h3>
+
+          <div class="sidebar__category">
+            <button class="sidebar__category-btn">
+              Ingressos
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="sidebar__subcategories">
+              <a href="#ingresso-diario" class="sidebar__sublink">Ingresso Diário</a>
+              <a href="#passaporte-anual" class="sidebar__sublink">Passaporte Anual</a>
+              <a href="#ingressos-vip" class="sidebar__sublink">Ingressos VIP</a>
+            </div>
+          </div>
+
+          <div class="sidebar__category">
+            <button class="sidebar__category-btn">
+              Pacotes de Viagem
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="sidebar__subcategories">
+              <a href="#pacote-imperial-familiar" class="sidebar__sublink">Pacote Imperial Familiar</a>
+              <a href="#pacote-romance-submarino" class="sidebar__sublink">Pacote Romance Submarino</a>
+              <a href="#pacote-aventura-oceanica" class="sidebar__sublink">Pacote Aventura Oceânica</a>
+            </div>
+          </div>
+
+          <div class="sidebar__category">
+            <button class="sidebar__category-btn">
+              Experiências
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="sidebar__subcategories">
+              <a href="#encontro-golfinhos" class="sidebar__sublink">Encontro com Golfinhos</a>
+              <a href="#mergulho-grande-aquario" class="sidebar__sublink">Mergulho no Grande Aquário</a>
+              <a href="#tour-bastidores" class="sidebar__sublink">Tour pelos Bastidores</a>
+            </div>
+          </div>
+
+          <div class="sidebar__category">
+            <button class="sidebar__category-btn">
+              Souvenirs
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="sidebar__subcategories">
+              <a href="#camisetas-roupas" class="sidebar__sublink">Camisetas e Roupas</a>
+              <a href="#brinquedos-pelucias" class="sidebar__sublink">Brinquedos e Pelúcias</a>
+              <a href="#itens-decoracao" class="sidebar__sublink">Itens de Decoração</a>
+              <a href="#livros-dvds" class="sidebar__sublink">Livros e DVDs</a>
+            </div>
+          </div>
+
+          <h3 class="sidebar__title">Ofertas Especiais</h3>
+          <a href="#" class="sidebar__link">Promoções de Verão</a>
+          <a href="#" class="sidebar__link">Descontos para Grupos</a>
+          <a href="#" class="sidebar__link">Pacotes Combinados</a>
+
+          <h3 class="sidebar__title">Destaques</h3>
+          <a href="#" class="sidebar__link">Novos Produtos</a>
+          <a href="#" class="sidebar__link">Mais Vendidos</a>
+        </aside>
+
+        <!-- Products Main -->
+        <section class="products-main">
+          <!-- Ingressos -->
+          <div class="products-section" id="ingresso-diario" data-reveal>
+            <h2 class="products-section__title">Ingressos</h2>
+            <div class="product-grid">
+              <article class="product-card" data-name="Ingresso Diário" data-price="50.00">
+                <div class="product-card__image-wrapper">
+                  <img src="../assets/img/produtos/Seaworld1.jpg" alt="Ingresso Diário AquaImperial" class="product-card__image" loading="lazy" />
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Ingresso Diário</h3>
+                  <p class="product-card__price">R$ 50,00</p>
+                  <button class="product-card__btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    Adicionar
+                  </button>
+                </div>
+              </article>
+
+              <article class="product-card" id="passaporte-anual" data-name="Passaporte Anual" data-price="200.00">
+                <div class="product-card__image-wrapper">
+                  <img src="../assets/img/produtos/anual.jpeg" alt="Passaporte Anual" class="product-card__image" loading="lazy" />
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Passaporte Anual</h3>
+                  <p class="product-card__price">R$ 200,00</p>
+                  <button class="product-card__btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    Adicionar
+                  </button>
+                </div>
+              </article>
+
+              <article class="product-card" id="ingressos-vip" data-name="Ingressos VIP" data-price="150.00">
+                <div class="product-card__image-wrapper">
+                  <img src="../assets/img/produtos/anuel 2.jpeg" alt="Ingressos VIP" class="product-card__image" loading="lazy" />
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Ingressos VIP</h3>
+                  <p class="product-card__price">R$ 150,00</p>
+                  <button class="product-card__btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    Adicionar
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Pacotes de Viagem -->
+          <div class="products-section" id="pacote-imperial-familiar" data-reveal>
+            <h2 class="products-section__title">Pacotes de Viagem</h2>
+            <div class="product-grid">
+              <article class="product-card" data-name="Pacote Imperial Familiar" data-price="180.00">
+                <div class="product-card__image-wrapper">
+                  <img src="../assets/img/produtos/viagem 1.jpeg" alt="Pacote Imperial Familiar" class="product-card__image" loading="lazy" />
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Pacote Imperial Familiar</h3>
+                  <p class="product-card__price">R$ 180,00</p>
+                  <button class="product-card__btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    Adicionar
+                  </button>
+                </div>
+              </article>
+
+              <article class="product-card" id="pacote-romance-submarino" data-name="Pacote Romance Submarino" data-price="250.00">
+                <div class="product-card__image-wrapper">
+                  <img src="../assets/img/produtos/viagem 2.jpeg" alt="Pacote Romance Submarino" class="product-card__image" loading="lazy" />
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Pacote Romance Submarino</h3>
+                  <p class="product-card__price">R$ 250,00</p>
+                  <button class="product-card__btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    Adicionar
+                  </button>
+                </div>
+              </article>
+
+              <article class="product-card" id="pacote-aventura-oceanica" data-name="Pacote Aventura Oceânica" data-price="220.00">
+                <div class="product-card__image-wrapper">
+                  <img src="../assets/img/produtos/viagem 3.jpeg" alt="Pacote Aventura Oceânica" class="product-card__image" loading="lazy" />
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Pacote Aventura Oceânica</h3>
+                  <p class="product-card__price">R$ 220,00</p>
+                  <button class="product-card__btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    Adicionar
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Experiências e Atividades -->
+          <div class="products-section" id="encontro-golfinhos" data-reveal>
+            <h2 class="products-section__title">Experiências e Atividades</h2>
+            <div class="product-grid">
+              <article class="product-card" data-name="Encontro com Golfinhos" data-price="100.00">
+                <div class="product-card__image-wrapper">
+                  <img src="../assets/img/produtos/golfinhos.jpeg" alt="Encontro com Golfinhos" class="product-card__image" loading="lazy" />
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Encontro com Golfinhos</h3>
+                  <p class="product-card__price">R$ 100,00</p>
+                  <button class="product-card__btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    Adicionar
+                  </button>
+                </div>
+              </article>
+
+              <article class="product-card" id="mergulho-grande-aquario" data-name="Mergulho no Grande Aquário" data-price="120.00">
+                <div class="product-card__image-wrapper">
+                  <img src="../assets/img/produtos/mergulho.jpeg" alt="Mergulho no Grande Aquário" class="product-card__image" loading="lazy" />
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Mergulho no Grande Aquário</h3>
+                  <p class="product-card__price">R$ 120,00</p>
+                  <button class="product-card__btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    Adicionar
+                  </button>
+                </div>
+              </article>
+
+              <article class="product-card" id="tour-bastidores" data-name="Tour pelos Bastidores" data-price="80.00">
+                <div class="product-card__image-wrapper">
+                  <img src="../assets/img/produtos/bastidores.jpeg" alt="Tour pelos Bastidores" class="product-card__image" loading="lazy" />
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Tour pelos Bastidores</h3>
+                  <p class="product-card__price">R$ 80,00</p>
+                  <button class="product-card__btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    Adicionar
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Souvenirs -->
+          <div class="products-section" id="camisetas-roupas" data-reveal>
+            <h2 class="products-section__title">Lembranças e Souvenirs</h2>
+            <div class="product-grid">
+              <article class="product-card" data-name="Camisetas e Roupas" data-price="60.00">
+                <div class="product-card__image-wrapper">
+                  <img src="../assets/img/produtos/roupas.jpeg" alt="Camisetas e Roupas" class="product-card__image" loading="lazy" />
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Camisetas e Roupas</h3>
+                  <p class="product-card__price">R$ 60,00</p>
+                  <button class="product-card__btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    Adicionar
+                  </button>
+                </div>
+              </article>
+
+              <article class="product-card" id="brinquedos-pelucias" data-name="Brinquedos e Pelúcias" data-price="40.00">
+                <div class="product-card__image-wrapper">
+                  <img src="../assets/img/produtos/brinquedos.jpeg" alt="Brinquedos e Pelúcias" class="product-card__image" loading="lazy" />
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Brinquedos e Pelúcias</h3>
+                  <p class="product-card__price">R$ 40,00</p>
+                  <button class="product-card__btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    Adicionar
+                  </button>
+                </div>
+              </article>
+
+              <article class="product-card" id="itens-decoracao" data-name="Itens de Decoração" data-price="50.00">
+                <div class="product-card__image-wrapper">
+                  <img src="../assets/img/produtos/items.jpeg" alt="Itens de Decoração" class="product-card__image" loading="lazy" />
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Itens de Decoração</h3>
+                  <p class="product-card__price">R$ 50,00</p>
+                  <button class="product-card__btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    Adicionar
+                  </button>
+                </div>
+              </article>
+
+              <article class="product-card" id="livros-dvds" data-name="Livros e DVDs" data-price="30.00">
+                <div class="product-card__image-wrapper">
+                  <img src="../assets/img/produtos/book.jpeg" alt="Livros e DVDs" class="product-card__image" loading="lazy" />
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">Livros e DVDs</h3>
+                  <p class="product-card__price">R$ 30,00</p>
+                  <button class="product-card__btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    Adicionar
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cart -->
+        <div class="cart">
+          <div class="cart__header">
+            <h2 class="cart__title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+              Carrinho
+            </h2>
+            <span class="cart__badge" role="status" aria-live="polite" aria-label="Itens no carrinho">0</span>
+          </div>
+
+          <div class="cart__empty" id="cart-empty">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+            </svg>
+            <p>Seu carrinho está vazio</p>
+          </div>
+
+          <ul class="cart__items"></ul>
+
+          <div class="cart__footer">
+            <div class="cart__total">
+              <span>Total:</span>
+              <span class="cart__total-value">R$ 0,00</span>
+            </div>
+            <button class="cart__checkout-btn" disabled>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M20 6L9 17l-5-5"/></svg>
+              Finalizar Compra
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <h2 class="footer__brand-name">AquaImperial</h2>
+          <p>
+            Onde a Magia dos Oceanos Ganha Vida! Venha viver uma experiência
+            única e inesquecível com toda a família.
+          </p>
+        </div>
+        <div>
+          <h3 class="footer__heading">Links Rápidos</h3>
+          <nav class="footer__links">
+            <a href="../index.html" class="footer__link">Início</a>
+            <a href="../index.html#introducao" class="footer__link">Introdução</a>
+            <a href="../index.html#atracoes" class="footer__link">Atrações</a>
+            <a href="../index.html#conservacao" class="footer__link">Conservação</a>
+          </nav>
+        </div>
+        <div>
+          <h3 class="footer__heading">Encontre-nos</h3>
+          <div class="footer__links">
+            <a href="https://wa.me/5522987654321" class="footer__link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+              (22) 98765-4321
+            </a>
+            <a href="mailto:contato@aquaimperial.com.br" class="footer__link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              contato@aquaimperial.com.br
+            </a>
+            <span class="footer__link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              Av. 7 de Setembro, nº 42, Centro
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 AquaImperial — Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/global.js"></script>
+    <script src="../assets/js/produtos.js"></script>
+  </body>
+</html>
